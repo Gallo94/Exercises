@@ -1,9 +1,3 @@
-/**
- * Write a program that read a string and prints all of its nonempty substring
- * 
- * @author Luca
- */
-
 import java.util.Scanner;
 
 public class Substring

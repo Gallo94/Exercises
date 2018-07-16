@@ -1,10 +1,3 @@
-/**
- * Write a program that reads a two-dimensional array of integers and determines
- * whether it is a magic square (that is, whether the sum of all rows, all columns
- * and the diagonals is the same).
- * 
- * @author Luca
- */
 public class BidimensionalArray
 {
 	private int[][] matrix =

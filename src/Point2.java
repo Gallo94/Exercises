@@ -1,15 +1,15 @@
-public class Point
+public class Point2 
 {
 	private float x;
 	private float y;
 
-	public Point(float x, float y)
+	public Point2(float x, float y)
 	{
 		this.x = x;
 		this.y = y;
 	}
 	
-	public Point()
+	public Point2()
 	{
 		this.x = 0.0f;
 		this.y = 0.0f;
@@ -25,16 +25,16 @@ public class Point
 		return this.y;
 	}
 	
-	public Point translate(float x, float y)
+	public void translate(float x, float y)
 	{
-		Point point = new Point(this.x+x, this.y+y);
-		return point;
+		this.x+=x; 
+		this.y+=y;
 	}
 	
-	public Point scale(float scale)
+	public void scale(float scale)
 	{
-		Point point = new Point(this.x*scale, this.y*scale);
-		return point;
+		this.x*=scale;
+		this.y*=scale;
 	}
 	
 	@Override
