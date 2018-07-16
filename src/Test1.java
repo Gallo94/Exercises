@@ -1,3 +1,10 @@
+/**
+ * Write a program that reads an integer and prints it in binary, octal
+ * and exadecimal. Print the reciprocal as a hexadecimal floating-point number.
+ * 
+ * @author Luca
+ */
+
 import java.util.Scanner;
 
 public class Test1
