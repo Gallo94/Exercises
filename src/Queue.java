@@ -1,11 +1,15 @@
-import java.util.NoSuchElementException;
-
 public class Queue
 {	
 	public static class Node
 	{
 		private String str;
 		private Node next;
+		
+		public Node()
+		{
+			this.str = "";
+			this.next = null;			
+		}
 		
 		public Node(String str)
 		{
@@ -16,41 +20,29 @@ public class Queue
 	
 	public class Iterator
 	{
-		private Node current = null;
+		private Node current;
+		private int iterations = 0;
 		
 		public Iterator()
 		{
-			this.current = head;
+			this.current = new Node();
 		}
 		
 		public boolean hasNext()
-		{
-			if (numNodes <= 1)
-				return false;
-			
-			return current.next != null;
+		{		
+			return this.iterations < Queue.this.numNodes;
 		}
 
 		public Node next()
 		{	
-			if (numNodes == 0)
-				return null;	
-
-			Node ret;
-
-			if (head.equals(tail))
-			{
-				ret = head;
-				current = head;
-			}
+			if (this.current.next == null)
+				this.current = head;
 			else
-			{
-				ret = current.next;
-				current = current.next;
-			}
+				this.current = this.current.next;
 			
-			return ret;
+			iterations++;
 			
+			return current;
 		}
 	}
 	
@@ -108,21 +100,18 @@ public class Queue
 			Node node = itr.next();
 			System.out.println(node.str);
 		}
-		
 	}
 	
 	public static void main(String args[])
 	{
 		Queue queue = new Queue();
-		System.out.println("Add elements");
+		System.out.println("Before elements deletion");
 		queue.add("ciao");
 		queue.add("ciao2");
 		queue.add("ciao3");
 		queue.add("ciao4");
 		queue.print();
-		System.out.println("Remove elements");
-		queue.remove();
-		queue.remove();
+		System.out.println("After elements deletion");
 		queue.remove();
 		queue.remove();
 		queue.print();
