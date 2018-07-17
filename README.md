@@ -1,5 +1,5 @@
 # Exercises
-Exercises from **_Core Java SE 9 for the Impatient_** _(Second Edition)_ _by Cay S. Horstmann_
+Exercises from **_Core Java SE 9 for the Impatient_** _(2th Edition)_ _by Cay S. Horstmann_
 
 ## Classes:
 * **Test1**: Write a program that reads an integer and prints it in binary, octal and exadecimal. Print the reciprocal as a hexadecimal floating-point number.
