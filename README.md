@@ -1,7 +1,7 @@
 # Exercises
-Exercises in Java8
+Exercises from **_Core Java SE 9 for the Impatient_** _Second Edition_
 
-## Classi:
+## Classes:
 * **Test1**: Write a program that reads an integer and prints it in binary, octal and exadecimal. Print the reciprocal as a hexadecimal floating-point number.
 * **Substring**: Write a program that read a string and prints all of its nonempty substring.
 * **Point**: Implements an immutable class _Point_ that describes a point in the plane.
