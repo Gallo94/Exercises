@@ -17,12 +17,6 @@ public class ClassA
 		
 		List<String> ls = new ArrayList<>();
 		List<Object> lo = new ArrayList<>();
-		checkCollection(ls);
 		
-	}
-	
-	public void checkCollection(List<Object> list)
-	{
-		// do staff on collections
 	}
 }
